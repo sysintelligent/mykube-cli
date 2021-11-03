@@ -10,7 +10,7 @@ import (
 // minikubeCmd represents the minikube command
 var minikubeCmd = &cobra.Command{
 	Use:   "minikube",
-	Short: "Starts a local Kubernetes cluster.",
+	Short: "Starts a local minikube cluster",
 	RunE:  startMinikube,
 }
 
@@ -31,5 +31,5 @@ func startMinikube(cmd *cobra.Command, args []string) error {
 }
 
 func init() {
-	createCmd.AddCommand(minikubeCmd)
+	provisionCmd.AddCommand(minikubeCmd)
 }

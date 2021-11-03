@@ -10,7 +10,7 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "mykube-cli",
-	Short: "mykube provisions and manages local Kubernetes clusters optimized for development.",
+	Short: "mykube provisions and manages local Kubernetes clusters optimized for development",
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
